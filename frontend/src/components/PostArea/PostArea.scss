@@ -1,0 +1,25 @@
+.PostArea {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  &__container {
+    width: 100%;
+    display: flex;
+    gap: var(--spacer-sml);
+    flex-direction: column;
+    align-items: center;
+    padding: var(--spacer-sml) var(--spacer);
+  }
+
+  &__count {
+    align-self: flex-end;
+    font-size: var(--fs-lg);
+    font-weight: var(--fw-b);
+
+    @media screen and (max-width:500px){
+      font-size: var(--fs-base);
+    }
+  }
+}

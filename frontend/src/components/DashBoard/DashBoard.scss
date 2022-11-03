@@ -1,0 +1,26 @@
+.DashBoard {
+  display: flex;
+  justify-content: center;
+
+  &__container {
+    display: grid;
+    gap: var(--spacer);
+    width: 1400px;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+    padding: var(--spacer-lg) 0;
+
+    @media screen and (max-width: 1500px) {
+      width: 90%;
+    }
+
+    @media screen and (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+    }
+
+    @media screen and (max-width: 500px) {
+      width: 95%;
+    }
+  }
+}

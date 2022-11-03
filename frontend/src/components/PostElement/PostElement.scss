@@ -1,0 +1,108 @@
+// local variables
+$imageSize: 60px;
+$smallImageSize: 46px;
+$vrSmlImgSize: 40px;
+
+.PostElement {
+  display: grid;
+  grid-template-columns: $imageSize auto;
+  gap: var(--spacer-sml);
+  width: 100%;
+  background: var(--violetish-clr);
+  padding: var(--spacer) var(--spacer-lg);
+  border-radius: 7px;
+  border: 1px solid var(--violetish-clr);
+  box-shadow: var(--shadow-lght);
+  transition: all 0.3s ease-in-out;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    box-shadow: var(--shadow);
+    transform: scale(1.01);
+  }
+
+  @media screen and (max-width: 500px) {
+    grid-template-columns: smallImageSize auto;
+    padding: var(--spacer-sml) var(--spacer);
+    gap: var(--spacer-tny);
+  }
+
+  &.small {
+    grid-template-columns: $vrSmlImgSize auto;
+    gap: var(--spacer-tny);
+    padding: var(--spacer-tny) var(--spacer-sml);
+    border-radius: 5px;
+  }
+
+  &__imgContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: $imageSize;
+    height: $imageSize;
+    overflow: hidden;
+    border: 4px solid white;
+    border-radius: 50%;
+    box-shadow: var(--shadow-lght);
+
+    @media screen and (max-width: 500px) {
+      border: 3px solid white;
+      width: $smallImageSize;
+      height: $smallImageSize;
+    }
+
+    &.small {
+      width: $vrSmlImgSize;
+      height: $vrSmlImgSize;
+      border: 3px solid white;
+    }
+  }
+
+  &__img {
+    height:100%;
+  }
+
+  &__descr {
+    display: flex;
+    gap: var(--spacer);
+    flex-direction: column;
+    padding-top: var(--spacer);
+    word-break: break-all;
+
+    @media screen and (max-width: 500px) {
+      gap: var(--spacer-sml);
+      padding-top: var(--spacer-sml);
+    }
+
+    &.small{
+      gap: var(--spacer-tny);
+      padding-top: var(--spacer-tny);
+    }
+  }
+
+  &__userName {
+    font-size: var(--fs-lg);
+    word-break: break-all;
+
+    @media screen and (max-width: 500px) {
+      font-size: var(--fs-base);
+    }
+
+    &.small{
+      font-size: var(--fs-base);
+    }
+  }
+
+  &__text {
+    font-size: var(--fs-base);
+
+    @media screen and (max-width: 500px) {
+      font-size: var(--fs-sm);
+    }
+
+    &.small {
+      font-size: var(--fs-sm);
+    }
+  }
+}

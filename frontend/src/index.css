@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: rgb(50, 50, 50);
+  font-weight: 400;
+}
+
+:root {
+  --fw-s: 300;
+  --fw-n: 400;
+  --fw-m: 500;
+  --fw-b: 700;
+
+  --fs-xs: 12px;
+  --fs-sm: 14px;
+  --fs-base: 16px;
+  --fs-lg: 18px;
+  --fs-xl: 20px;
+  --fs-2xl: 24px;
+  --fs-3xl: 30px;
+
+  --greenish-clr: #78E0DC;
+  --bluish-clr: #8EEDF7;
+  --violetish-clr: #A1CDF1;
+  --brownish-clr: #9D695A;
+  --pinkish-clr: #D496A7;
+  --error-clr: tomato;
+  --border-input: 1px solid rgb(135, 135, 135);
+  --border-input-error: 1px solid tomato;
+
+  --size: 1rem;
+  --size-tny: calc(var(--spacer) / 3);
+  --size-sml: calc(var(--spacer) / 2);
+  --size-md: calc(var(--spacer) * 1.5);
+  --size-lg: calc(var(--spacer) * 2);
+  --size-hg: calc(var(--spacer) * 3);
+
+  --spacer: 1rem;
+  --spacer-tny: calc(var(--spacer) / 3);
+  --spacer-sml: calc(var(--spacer) / 2);
+  --spacer-md: calc(var(--spacer) * 1.5);
+  --spacer-lg: calc(var(--spacer) * 2);
+  --spacer-hg: calc(var(--spacer) * 3);
+
+  --shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+  --shadow-lght: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
